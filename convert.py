@@ -5,10 +5,12 @@ import os
 
 register_heif_opener()
 
+
 def convert_heic(target, destination):
     print(f"[-] Converting {target} to {destination}")
     image = Image.open(target)
-    image.convert('RGB').save(destination)
+    image.convert("RGB").save(destination)
+
 
 target_dir = "./heic/"
 
@@ -28,4 +30,4 @@ for path, dirnames, filenames in os.walk(target_dir):
             print(f"[-] Relative path: {relative_path}")
             new_path = os.path.join(new_dir, relative_path)
             print(f"[-] New path: {new_path}")
-            convert_heic(os.path.join(path,file), new_path + ".jpg")
+            convert_heic(os.path.join(path, file), new_path + ".jpg")
