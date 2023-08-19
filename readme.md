@@ -23,3 +23,13 @@ Replace the following arguments:
 
 
 If you omit the --input-format argument, the script will process any valid image files found in the input directory, ignoring non-image files.
+
+## Building standalone Windows executable
+To produce a standalone Windows executable, follow these steps on a Windows system with Python 3.x installed.
+- `pip install pyinstaller`
+- Navigate to this repository's main folder
+- `pyinstaller convert.spec`
+- Your executable will now be generated under **dist/convert.exe**
+    - This executable will only be garuenteed to work if:
+        - You run on the same architecture
+        - You had a valid version of python 3.x installed with all dependencies, and the script was working
