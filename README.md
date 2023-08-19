@@ -4,8 +4,10 @@ This simple python utility lets you walk a directory and convert any image files
 
 ## Requirements
 - Python 3.x
-- Pillow library: `pip install pillow`
-- pillow_heif addon: `pip install pillow_heif`
+- Pillow library: `pip install Pillow`
+- pillow_heif addon: `pip install pillow-heif`
+
+This can be achieved alternatively with: `pip install -r requirements.txt`
 
 ## Usage
 Run the script with the desired arguments:
